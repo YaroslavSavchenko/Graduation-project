@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#"><img src="img/logo.png" /></a></div>
+					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12"><div class="pull-right" id="call"><span>Есть вопросы? Звоните!</span><p>8 800 800 80 80</p></div></div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12" id="call-order"><a id="call-order-btn" href="#" onclick="$('#feedback').modal('show');" class="btn-primary btn-lg btn-block pull-right">ЗАКАЗАТЬ ЗВОНОК</a></div>
+				</div>
+			</div>
+		</header>
+		<div id="top">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+						<div id="circle">
+							<h3>Путешествуйте с нами!</h3>
+							<h2>Путешествуйте</h2>
+							<h1>сейчас!</h1>
+							<a href="#order" class="smoothScroll"><img src="img/arrow-down.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="order" name="section"></section>
+		<div id="orderwrap">
+			<div class="container">
+				<div class="row">
+					<h1>Ваш отдых начнётся здесь — мы обо всём позаботимся!</h1>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<ul>
+							<li id="chat">Мы выслушаем ваши пожелания и обязательно подберём то, что вам нужно</li>
+							<li id="timer">Вы получите быстрый ответ на запрос</li>
+							<li id="map">Мы расскажем обо всех нюансах вашей поездки</li>
+							<li id="hand">Никаких неадекватных ситуаций — все чётко и слаженно</li>
+						</ul>
+						<div class="hidden-xs">
+							<h2>Ваше обращение к нам — <br>только начало путешествий!</h2>
+							<img id="arrow-form" class="pull-right" src="img/arrow-form.png">
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<form class="form" action="" method="POST">
+							<h1>Лучшие туры</h1>
+							<h5>по лучшим ценам специально для вас</h5>
+							<div class="form-group">
+								<input type="text" class="form-control" data-validation="required" name="name" value="" placeholder="Ваше имя*">
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" name="phone" value="" data-validation="required" data-validation-error-msg="Введите номер телефона" placeholder="Телефон*">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" value="" data-validation="email" data-validation-error-msg="Введите корректный E-mail" placeholder="Электронная почта*">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="1" data-validation="required" name="message" value="" placeholder="Ваши пожелания"></textarea>
+							</div>
+							<button type="submit" class="btn btn-main btn-block">Хочу отдохнуть</button>
+							<h6><a href="#" data-toggle="modal" data-target="#policy">Политика конфиденциальности. <br>Ваши данные не будут переданы третьим лицам</a></h6>
+						</form>
+						<div class="hidden-lg hidden-md hidden-sm">
+							<h2>Ваше обращение к нам — только начало путешествий!</h2>
+							<img id="arrow-form" class="pull-right" src="img/arrow-form.png">
+						</div>
+					</div>
+					<h1>Горячие предложения — бронируйте сейчас <br>и <span>экономьте до 50%</span></h1>
+				</div>
+			</div>
+		</div>
+		<div id="why">
+			<div class="container">
+				<div class="row text-center">
+					<h1>6 причин обратиться к нам:</h1>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>01</h2>
+						<hr>
+						<span>5 лет <br>безукоризненной <br>работы</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>02</h2>
+						<hr>
+						<span>100% гарантия <br>удачного <br>путешествия</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>03</h2>
+						<hr>
+						<span>Знающие <br>менеджеры</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>04</h2>
+						<hr>
+						<span>Только <br>надёжные <br>туроператоры</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>05</h2>
+						<hr>
+						<span>На связи <br>24 часа <br>в сутки</span>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<h2>06</h2>
+						<hr>
+						<span>Безупречный <br>сервис</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="step">
+			<div class="container">
+				<div class="row text-center">
+					<h1><span>4 шага</span> к отдыху:</h1>
+					<div class="col-md-3 col-sm-6">
+						<img src="img/step1.png">
+						<h4>Вы звоните или оставляете заявку</h4>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<img src="img/step2.png">
+						<h4>Получаете наше предложение</h4>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<img src="img/step3.png">
+						<h4>Бронируете тур</h4>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<img src="img/step4.png">
+						<h4>Пакуете чемодан!</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="testimonial">
+			<div class="container">
+				<div class="row text-center">
+					<h1>Отзывы наших клиентов:</h1>
+					<div id="carousel" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides --->
+						<div class="carousel-inner">
+							<div class="item active">
+								<div><img src="img/slider.png" alt=""></div>
+								<div class="carousel-caption">
+									<h2>Валентина</h2>
+									<p>Спасибо за помощь в подборе тура, с вами действительно возможно всё. Пользуюсь услугами Вашего агентства уже не первый раз — причин разочароваться не было: сотрудники всегда внимательны, терпеливы и вежливы. Отлично понимают мои требования к поездке, и предлагают именно то, что нужно. Рекомендую.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div><img src="img/slider.png" alt=""></div>
+								<div class="carousel-caption">
+									<h2>Валентина</h2>
+									<p>Спасибо за помощь в подборе тура, с вами действительно возможно всё. Пользуюсь услугами Вашего агентства уже не первый раз — причин разочароваться не было: сотрудники всегда внимательны, терпеливы и вежливы. Отлично понимают мои требования к поездке, и предлагают именно то, что нужно. Рекомендую.</p>
+								</div>
+							</div>
+							<div class="item">
+								<div><img src="img/slider.png" alt=""></div>
+								<div class="carousel-caption">
+									<h2>Валентина</h2>
+									<p>Спасибо за помощь в подборе тура, с вами действительно возможно всё. Пользуюсь услугами Вашего агентства уже не первый раз — причин разочароваться не было: сотрудники всегда внимательны, терпеливы и вежливы. Отлично понимают мои требования к поездке, и предлагают именно то, что нужно. Рекомендую.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel" data-slide="prev">
+							<img src="img/arrow-left.png">
+						</a>
+						<a class="right carousel-control" href="#carousel" data-slide="next">
+							<img src="img/arrow-right.png">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row text-center">
+					<h1>Вы ещё думаете?</h1>
+					<h3>Стань ближе к отдыху на один шаг:</h4>
+					<p>оставьте ваши контактные данные, мы свяжемся с вами в ближайшее время и с радостью ответим на все вопросы</p>
+				</div>
+			</div>
+			<div id="footer-form">
+				<div class="container">
+					<div class="row text-center">
+						<form class="form-inline" action="#" method="POST" role="form">
+							<div class="form-group col-md-3 col-sm-3 col-xs-12">
+								<input type="text" class="form-control" data-validation="required" name="name" value="" placeholder="Ваше имя*">
+							</div>
+							<div class="form-group col-md-3 col-sm-3 col-xs-12">
+								<input type="tel" class="form-control" name="phone" value="" data-validation="required" data-validation-error-msg="Введите номер телефона" placeholder="Телефон*">
+							</div>
+							<div class="form-group col-md-3 col-sm-3 col-xs-12">
+								<input type="email" class="form-control" name="email" value="" data-validation="email" data-validation-error-msg="Введите корректный E-mail" placeholder="Электронная почта*">
+							</div>
+							<div class="form-group col-md-3 col-sm-3 col-xs-12">
+								<button type="submit" class="btn btn-block">Консультация</button>
+							</div>
+						</form>
+					</div>
+					<h5 class="text-center"><a href="#" data-toggle="modal" data-target="#policy">Политика конфиденциальности. Ваши данные не будут переданы третьим лицам</a></h5>
+				</div>
+			</div>
+		</footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-2 col-sm-2 col-xs-12"><a href="#"><img src="img/logo.png" /></a></div>
+					<div class="col-md-10 col-sm-10 col-xs-12"><div class="pull-right" id="call"><span>Есть вопросы? Звоните!</span><p>8 800 800 80 80</p></div></div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="feedback">
+			<div class="modal-dialog">
+				<div class="modal-content text-center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Хочешь отдохнуть</h4>
+						<p>наши специалисты помогу подобрать путевку по самым выгодным ценам</p>
+					</div>
+					<div class="modal-body">
+						<form action="" class="form" method="POST">
+							<div class="form-group">
+								<input type="text" class="form-control" data-validation="required" name="name" value="" placeholder="Ваше имя*">
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" name="phone" value="" data-validation="required" data-validation-error-msg="Введите номер телефона" placeholder="Телефон*">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" value="" data-validation="email" data-validation-error-msg="Введите корректный E-mail" placeholder="Электронная почта*">
+							</div>
+							<button type="submit" class="btn btn-main btn-block">Хочу отдохнуть</button>
+							<h6><a href="#" data-toggle="modal" data-target="#policy">Политика конфиденциальности. <br>Ваши данные не будут переданы третьим лицам</a></h6>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="policy">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Политика</h4>
+					</div>
+					<div class="modal-body">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/jquery.form-validator.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/mask.js"></script>
+		<!-- скрипт для валидации полей --> 
+		<script>
+			$.validate({
+				validateOnBlur : false,
+				showHelpOnFocus : false
+			});
+			$('*').tooltip();
+			$("#call-order-btn").hover(function(){
+				$(this).addClass('animated rubberBand');
+			},function(){
+				$(this).removeClass('animated rubberBand');
+			});
+			$("#orderwrap form button").hover(function(){
+				$(this).addClass('animated rubberBand');
+			},function(){
+				$(this).removeClass('animated rubberBand');
+			});
+			$("#footer-form button").hover(function(){
+				$(this).addClass('animated rubberBand');
+			},function(){
+				$(this).removeClass('animated rubberBand');
+			});
+			$('#circle').addClass('animated bounceInDown');
+			$("#top").hover(function(){
+				$(this).find('#circle').addClass('animated flipInX');
+			},function(){
+				$(this).find('#circle').removeClass('animated flipInX');
+			});
+			$("#orderwrap ul li").hover(function(){
+				$(this).addClass('animated pulse');
+			},function(){
+				$(this).removeClass('animated pulse');
+			});
+			$("#why .row div").hover(function(){
+				$(this).addClass('animated fadeInDown');
+			},function(){
+				$(this).removeClass('animated fadeInDown');
+			});
+			$("#step .row div").hover(function(){
+				$(this).find('img').addClass('animated flip');
+			},function(){
+				$(this).find('img').removeClass('animated flip');
+			});
+		</script>
+	</body>
+</html>

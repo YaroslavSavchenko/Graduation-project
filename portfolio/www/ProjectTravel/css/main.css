@@ -1,0 +1,811 @@
+@font-face {
+    font-family: 'HelvaticaNeueCyr Black';
+    src: url('../fonts/helveticaneuecyr-black-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-black-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-black-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-black-webfont.svg#helveticaneuecyrblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvaticaNeueCyr Bold';
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvaticaNeueCyr Light';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvaticaNeueCyr Medium';
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-medium-webfont.svg#helveticaneuecyrmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvaticaNeueCyr Roman';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelvaticaNeueCyr Thin';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	width:100%;
+	background-color:#fff;
+}
+header{
+	padding-top: 25px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+#top{
+	background: url("../img/bg.jpg") repeat center center;
+	padding-bottom: 100px;
+}
+#top #circle{
+	background-color: rgba(158,0,93,0.7);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	padding: 100px 20px;
+	margin-top: 90px;
+	color: #fff;
+}
+#top #circle h3{
+	line-height: 24pt;
+	letter-spacing: 4px;
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+}
+#top #circle h2{
+	font-family: "HelvaticaNeueCyr Roman", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 36px;
+}
+#top #circle h1{
+	font-family: "HelvaticaNeueCyr Roman", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 54px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+#call-order{
+	padding-top:16px;
+}
+#call-order-btn{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	background-color: #92278f;
+	border: #92278f 2px solid;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+}
+#call-order-btn:hover{
+	background-color: #fff;
+	color:#92278f;
+	border: #92278f 2px solid;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+}
+#call{
+	text-align:right;
+	margin-right: 30px;
+	font-family: Arial, sans-serif;
+}
+#call p{
+	font-size: 40px;
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	margin:-10px 0 0 0;
+}
+#orderwrap{
+	padding: 40px 0;
+	background-color: #fff;
+}
+#orderwrap h1{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+#orderwrap h2{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+}
+#orderwrap form{
+	text-align: center;
+	padding: 20px 50px;
+	background-color: #8dc63f;
+	color:#fff;
+	margin-bottom:40px;
+}
+#orderwrap input,#orderwrap textarea{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+#orderwrap form h1{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 20px 0 5px 0;
+}
+#orderwrap form h5{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0 0 25px 0;
+}
+#orderwrap form button{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	background-color: #92278f;
+	padding: 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius:0;
+	border: #92278f 2px solid;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out;
+	color:#fff;
+}
+#orderwrap form button:hover{
+	background-color: #8dc63f;
+	border: #fff 2px solid;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out;
+}
+#orderwrap ul{
+	list-style-type:none;
+	font-size: 18px;
+	padding: 0;
+	margin-bottom:40px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#orderwrap ul li{
+	margin:20px 0;
+}
+#orderwrap ul li#chat{
+	background: url("../img/chat.png") no-repeat 0 0;
+	padding-left: 70px;
+	height: 50px;
+}
+#orderwrap ul li#timer{
+	background: url("../img/timer.png") no-repeat 0 0;
+	padding-left: 70px;
+	height: 50px;
+}
+#orderwrap ul li#map{
+	background: url("../img/map.png") no-repeat 0 0;
+	padding-left: 70px;
+	height: 50px;
+}
+#orderwrap ul li#hand{
+	background: url("../img/hand.png") no-repeat 0 0;
+	padding-left: 70px;
+	height: 50px;
+}
+#orderwrap h1:last-child{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+#orderwrap h1:last-child span{
+	font-family: "HelvaticaNeueCyr Black", Helvetica, Arial, sans-serif;
+	color:#f39c12;
+}
+#orderwrap form h6 a{
+	color:#fff;
+	text-decoration:none;
+}
+#arrow-form{
+	position: relative;
+	top: -40px;
+	float: right;
+}
+#why{
+	background: url("../img/stars.jpg") repeat center center;
+	color: #fff;
+	padding-bottom: 40px;
+}
+#why h1{
+	font-family: "HelvaticaNeueCyr Black", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 4%;
+	margin-bottom: 3%;
+}
+#why h2{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	font-size: 70px;
+}
+#why hr{
+	width: 80px;
+	height: 2px;
+	background: #fff;
+	margin: -18px auto 20px auto;
+}
+#why span{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+#step h1{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#step span{
+	font-family: "HelvaticaNeueCyr Black", Helvetica, Arial, sans-serif;
+	color: #f39c12;
+}
+#step h4{
+	font-family: "HelvaticaNeueCyr Light", Helvetica, Arial, sans-serif;
+	margin-top: 30px;
+}
+#step{
+	padding-top:30px;
+	padding-bottom:50px;
+	background-color:#fff;
+}
+#testimonial{
+	background-color:#5ca61d;
+	color:#fff;
+}
+#testimonial h1{
+	font-family: "HelvaticaNeueCyr Thin", Helvetica, Arial, sans-serif;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+.carousel-caption{
+	position:static;
+	padding-top:0;
+}
+.carousel-caption h2{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	text-shadow: none;
+	font-weight: normal;
+}
+.carousel-caption p{
+	font-family: Arial, sans-serif;
+	text-shadow: none;
+	font-weight: normal;
+}
+.carousel-control.left,.carousel-control.right{
+	background:none;
+	filter:none;
+}
+.carousel-control{
+	width:50%;
+}
+.carousel-control img{
+	position: absolute;
+	top: 20%;
+	z-index: 5;
+	display: inline-block;
+}
+.carousel-control.left img{
+	left: 50%;
+}
+.carousel-control.right img{
+	right: 50%;
+}
+footer{
+	background: url("../img/bottom.jpg") repeat center center #30A0DE;
+}
+#footer{
+	padding: 20px 0;
+}
+#footer-form{
+	background-color: rgba(0,0,0,0.3);
+	padding-top: 35px;
+	padding-bottom: 20px;
+	bottom: 0;
+}
+footer h1{
+	font-family: "HelvaticaNeueCyr Light", Helvetica, Arial, sans-serif;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 60px;
+}
+footer h3{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+}
+footer p{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+#footer-form input{
+	font-family: Arial, sans-serif;
+	text-shadow: none;
+	font-weight: normal;
+	background-color:rgba(255,255,255,0.7);
+	padding: 20px 10px;
+	text-align: center;
+	width:100%;
+	font-size: 18px;
+	box-shadow: none;
+	-webkit-transition:none;
+}
+#footer-form input::-webkit-input-placeholder { /* WebKit browsers */
+	color: #000;
+}
+#footer-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #000;
+}
+#footer-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #000;
+}
+#footer-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #000;
+}
+#footer-form button{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	background-color: #92278f;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 8px 20px;
+	font-weight: normal;
+	border: #92278f 2px solid;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+	font-size: 16px;
+}
+#footer-form button:hover{
+	background-color: rgba(255,255,255,0.7);
+	color:#92278f;
+	border: #92278f 2px solid;
+	-webkit-transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+	transition: background-color 0.2s ease-out,border 0.2s ease-out,color 0.2s ease-out;
+}
+#footer-form h5{
+	margin-top: 20px;
+}
+#footer-form a{
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+}
+#feedback .close{
+	position: absolute;
+	right: 0px;
+	color: #fff;
+	font-size: 70px;
+	top: 50px;
+	opacity: 1;
+	font-family: 'HelvaticaNeueCyr Thin';
+	font-weight: lighter;
+	text-shadow: none;
+}
+#feedback .modal-content{
+	background: url('../img/feedback-bg.png') no-repeat 0 0;
+	height: 616px;
+	width: 616px;
+	padding: 80px;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#feedback .modal-header{
+	border:0;
+	color:#fff;
+}
+#feedback .modal-title{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	text-transform:uppercase;
+	color: #fff;
+	font-size: 36px;
+}
+#feedback .modal-body{
+	padding: 0px 70px;
+	color: #fff;
+	margin-top: -26px;
+}
+#feedback input{
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	text-align: center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#feedback form button{
+	font-family: "HelvaticaNeueCyr Bold", Helvetica, Arial, sans-serif;
+	background-color: #92278f;
+	color:#fff;
+	padding: 15px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius:0;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#feedback h6 a {
+	color: #fff;
+	text-decoration:none;
+}
+.help-block {display: none;}
+input.valid,textarea.valid {
+    background: url(../img/icon-ok.png) no-repeat right center #e3ffe5;
+    color: #002f00;
+    border-color: #96b796 !important;
+}
+input.error,textarea.error {
+    background: url(../img/icon-fail.png) no-repeat right center #ffebef;
+    color: #480000;
+}
+@media (max-width: 970px) {
+	#footer-form input ,#footer-form button{
+		font-size: 14px;
+	}
+	#orderwrap form h1{
+		font-size: 32px;
+	}
+	#orderwrap form h5 {
+		font-size: 10px;
+	}
+	h6, .h6 {
+		font-size: 10px;
+	}
+}
+@media (max-width: 768px) {
+	#orderwrap form h1 {
+		font-size:36px;
+	}
+	#orderwrap h1:last-child{
+		font-size:26px;
+	}
+	#why h1{
+		font-size:22px;
+	}
+	#why h2 {
+		font-size:80px;
+	}
+	#why hr{
+		width: 90px;
+		height: 2px;
+		background: #fff;
+		margin: -20px auto 10px auto;
+	}
+	#why span {
+		font-size:14px;
+	}
+	#top #circle {
+		border-radius: 50%;
+		width: 320px;
+		height: 320px;
+		padding: 65px 20px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#top #circle h3 {
+		font-size: 16px;
+	}
+	#top #circle h2 {
+		font-size: 22px;
+	}
+	#top #circle h1 {
+		font-size: 31px;
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	.carousel-control {
+		width: 25%;
+	}
+	footer {
+		background: url("../img/bottom.jpg") no-repeat center bottom #30A0DE;
+	}
+	footer h1 {
+		font-size: 40px;
+	}
+	footer p {
+		font-size: 14px;
+	}
+	#footer p {
+		font-size: 30px;
+	}
+	footer h3 {
+		font-size: 20px;
+	}
+	#footer-form input ,#footer-form button{
+		margin: 0;
+	}
+	#why {
+		background: url("../img/stars.jpg") no-repeat center bottom #435866;
+		padding-bottom:30px;
+	}
+	#orderwrap h2 {
+		padding-right: 90px;
+	}
+	#arrow-form {
+		top: --80px;
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	#feedback .modal-content {
+		background: url('../img/feedback-bg2.png') no-repeat 0 0;
+		height: 450px;
+		width: 450px;
+		padding: 50px;
+	}
+	#feedback .close {
+		font-size: 50px;
+		top: 50px;
+	}
+	#feedback .modal-title {
+		font-size: 26px;
+	}
+	#feedback .modal-header p {
+		font-size: 12px;
+	}
+	#feedback .modal-body {
+		padding: 0px 50px;
+	}
+	#feedback input {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#feedback form button {
+		padding: 14px;
+		font-size: 14px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 490px) {
+	#feedback .modal-content {
+		background: url('../img/feedback-bg3.png') no-repeat 0 0;
+		height: 450px;
+		width: 450px;
+		padding: 50px;
+	}
+	#feedback .close {
+		font-size: 50px;
+		top: 50px;
+	}
+	#feedback .modal-title {
+		font-size: 26px;
+	}
+	#feedback .modal-header p {
+		font-size: 12px;
+	}
+	#feedback .modal-body {
+		padding: 0px 50px;
+	}
+	#feedback input {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	#feedback form button {
+		padding: 14px;
+		font-size: 14px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+@media (max-width: 320px) {
+	#top{
+		height: auto;
+		padding-bottom:60px;
+	}
+	#top #circle {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+		padding: 45px 15px;
+		min-width: 200px;
+		min-height: 200px;
+	}
+	#top #circle h3 {
+		font-size: 8px;
+		margin: 0;
+	}
+	#top #circle h2 {
+		font-size: 14px;
+		margin: 0;
+	}
+	#top #circle h1 {
+		font-size: 26px;
+		margin-top: 2px;
+		margin-bottom: 7px;
+	}
+	#top #circle img {
+		height: 26px;
+	}
+	#call p {
+		font-size:28px;
+	}
+	#orderwrap h1 {
+		font-size: 20px;
+	}
+	#orderwrap ul li {
+		margin: 20px 0;
+		font-size: 14px;
+	}
+	#orderwrap h2 {
+		font-size: 18px;
+	}
+	#orderwrap form h1 {
+		font-size: 26px;
+	}
+	#orderwrap form h5 {
+		font-size: 9px;
+	}
+	#orderwrap input, #orderwrap textarea {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+	#orderwrap form {
+		padding: 20px 30px;
+	}
+	#orderwrap form button {
+		padding: 10px;
+		font-size: 14px;
+	}
+	.form-control {
+		font-size: 12px;
+	}
+	h6, .h6 {
+		font-size: 10px;
+	}
+	#orderwrap h1:last-child {
+		font-size: 20px;
+	}
+	#orderwrap {
+		padding: 20px 0;
+	}
+	#orderwrap form {
+		margin-bottom: 30px;
+	}
+	#why {
+		padding-top: 20px;
+	}
+	#why h1 {
+		font-size: 16px;
+	}
+	#why h2 {
+		font-size: 60px;
+	}
+	#step h1 {
+		font-size: 30px;
+	}
+	#step {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	#testimonial h1 {
+		font-size: 24px;
+	}
+	#testimonial h1 {
+		font-size: 24px;
+	}
+	h2, .h2 {
+		font-size: 22px;
+	}
+	footer h1 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 10px;
+	}
+	footer h1 {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	footer h3 {
+		font-size: 16px;
+	}
+	footer p {
+		font-size: 12px;
+	}
+	#footer p {
+		font-size: 30px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	#orderwrap h2 {
+		padding-right: 90px;
+	}
+	#arrow-form {
+		top: -90px;
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		width: 100px;
+	}
+	.carousel-control {
+		width: 10%;
+	}
+	#why hr {
+		width: 70px;
+		height: 2px;
+		margin: -18px auto 10px auto;
+	}
+	#call-order-btn{
+		font-size: 14px;
+	}
+	#feedback .modal-content {
+		background: url('../img/feedback-bg3.png') no-repeat 0 0;
+		height: 280px;
+		width: 280px;
+		padding: 20px;
+	}
+	#feedback .close {
+		font-size: 30px;
+		top: 26px;
+	}
+	#feedback .modal-title {
+		font-size: 14px;
+	}
+	#feedback .modal-header p {
+		font-size: 8px;
+	}
+	#feedback .modal-body {
+		padding: 0px 30px;
+	}
+	.form-group {
+		margin-bottom: 5px;
+	}
+	#feedback input {
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 8px;
+		height: 30px;
+	}
+	#feedback form button {
+		padding: 6px;
+		font-size: 8px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	#feedback h6 {
+		margin-top: 0;
+	}	
+	#feedback h6 a {
+		color: #fff;
+		font-size: 8px;
+	}
+}

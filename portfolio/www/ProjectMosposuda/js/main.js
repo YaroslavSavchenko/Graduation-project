@@ -1,5 +1,0 @@
-// MAIN JavaScript
-
-$(function(){
-	
-});

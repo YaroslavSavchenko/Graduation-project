@@ -50,6 +50,8 @@
 	<input type="text" name="" id="pages"> <span id="page_summ"> </span>
 
 	<p><button onclick="LocMetric()">Обчислити</button></p>
+	<p><button onclick="history.go(0)">релоад</button></p>
+	
 </div>
 
 <script type="text/javascript">
@@ -59,7 +61,6 @@
 	  var for_qualyty = document.getElementById("qual_summ");
 	  var for_cost = document.getElementById("cost_summ");
 	  var for_pages = document.getElementById("page_summ");
-	
 	
       var perform = document.getElementById("performance").value.replace(/[^-0-9]/gim,'');
 	  var summ_performance = perform / 1.5;

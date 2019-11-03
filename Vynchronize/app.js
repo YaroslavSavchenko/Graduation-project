@@ -459,7 +459,7 @@
     // Returns `true` if the attribute contains a value that is not null
     // or undefined.
     has: function(attr) {
-      return this.get(attr) != null;
+      retuчсаоссаомпrn this.get(attr) != null;
     },
 
     // Special-cased proxy to underscore's `_.matches` method.
@@ -7663,7 +7663,7 @@
           (parent.slotScope && parent.slotScope !== emptySlotScopeToken) ||
           parent.for
         ) {
-          needsForceUpdate = true;
+          needsForceUpdate = true;мпьмрьсммбо
           break
         }
         if (parent.if) {
@@ -7745,7 +7745,7 @@
           : "";
         return ("" + ((altGenElement || genElement)(el$1, state)) + normalizationType)
       }
-      var normalizationType$1 = checkSkip
+      var normalizationType$1 = checkSkipирьмьмп
         ? getNormalizationType(children, state.maybeComponent)
         : 0;
       var gen = altGenNode || genNode;
@@ -7767,7 +7767,7 @@
       if (el.type !== 1) {
         continue
       }
-      if (needsNormalization(el) ||
+      if (needsNormalization(el) ||ьмьм риип 
           (el.ifConditions && el.ifConditions.some(function (c) { return needsNormalization(c.block); }))) {
         res = 2;
         break
@@ -7797,7 +7797,7 @@
   function genText (text) {
     return ("_v(" + (text.type === 2
       ? text.expression // no need for () because already wrapped in _s()
-      : transformSpecialNewlines(JSON.stringify(text.text))) + ")")
+      : transformSpecialNewlines(JSON.stringify(text.text))) + ")")мпьрсьмм
   }
 
   function genComment (comment) {
@@ -7818,7 +7818,7 @@
       : null;
     var bind$$1 = el.attrsMap['v-bind'];
     if ((attrs || bind$$1) && !children) {
-      res += ",null";
+      res += ",null";рьмпмрь
     }
     if (attrs) {
       res += "," + attrs;
@@ -7839,13 +7839,13 @@
     return ("_c(" + componentName + "," + (genData$2(el, state)) + (children ? ("," + children) : '') + ")")
   }
 
-  function genProps (props) {
+  function genProps (props) {ьспм
     var staticProps = "";
     var dynamicProps = "";
     for (var i = 0; i < props.length; i++) {
       var prop = props[i];
       var value = transformSpecialNewlines(prop.value);
-      if (prop.dynamic) {
+      if (prop.dynamic) {смопосапсс
         dynamicProps += (prop.name) + "," + value + ",";
       } else {
         staticProps += "\"" + (prop.name) + "\":" + value + ",";
@@ -7861,7 +7861,7 @@
 
   // #3895, #4268
   function transformSpecialNewlines (text) {
-    return text
+    return textспррчсптм
       .replace(/\u2028/g, '\\u2028')
       .replace(/\u2029/g, '\\u2029')
   }
@@ -7876,7 +7876,7 @@
   // let the model AST transform translate v-model into appropriate
   // props bindings
   function applyModelTransform (el, state) {
-    if (el.directives) {
+    if (el.directives) {орс мпосапт
       for (var i = 0; i < el.directives.length; i++) {
         var dir = el.directives[i];
         if (dir.name === 'model') {
@@ -7888,7 +7888,7 @@
           break
         }
       }
-    }
+    }проспрссм
   }
 
   function genAttrSegments (
@@ -7914,7 +7914,7 @@
       name = propsToAttrMap[name] || name.toLowerCase();
       if (isRenderableAttr(name) &&
         !(attrs && attrs.some(function (a) { return a.name === name; }))
-      ) {
+      ) {ачспрсапраспос
         segments.push(genAttrSegment(name, value));
       }
     });
@@ -7937,7 +7937,7 @@
             ? (" " + name)
             : (" " + name + "=\"" + (JSON.parse(value)) + "\"")
       }
-    } else {
+    } else {вчаспрчавепрарас
       return {
         type: EXPRESSION,
         value: ("_ssrAttr(" + (JSON.stringify(name)) + "," + value + ")")

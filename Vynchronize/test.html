@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Метрики</title>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="chart.js"></script>
 </head>
 <body style="background-color: rgba(188,184,138,0.7);">
 <style type="text/css">
@@ -38,21 +40,23 @@
 <div class="page">
 	<h2>Метрика 1</h2>
 	<p><strong>Производительность</strong>  =  Длина (тыс.,LOC)/ Затраты(чел-мес)</p>
-	<input type="text" name=""  id="performance"> <span id="perf_summ"> </span>
+	<input type="text" name=""  id="performance"> <span id="perf_summ">1</span> 
 
 	<p><strong>Качество</strong>  =  Ошибки (ед)/Длина(тыс.,LOC)</p>
-	<input type="text" name="" id="quality"> <span id="qual_summ"> </span>
+	<input type="text" name="" id="quality"> <span id="qual_summ">2</span> 
 	 
 	<p><strong>Удельная Стоимость</strong>  =  Стоимость(тыс) / Длина (LOC)</p>
-	<input type="text" name="" id="cost"> <span id="cost_summ"> </span>
+	<input type="text" name="" id="cost"> <span id="cost_summ">3</span> 
 
 	<p><strong>Документированность</strong>  =  Страниц Документа (стр) / Длина (тыс LOC)</p>
-	<input type="text" name="" id="pages"> <span id="page_summ"> </span>
+	<input type="text" name="" id="pages"> <span id="page_summ">4</span> 
 
 	<p><button onclick="LocMetric()">Обчислити</button></p>
 	<!-- <p><button onclick="history.go(0)">релоад</button></p> -->
 	
 </div>
+
+<div id="chart_div" style="margin: 5% 25%;"> </div>
 
 <script type="text/javascript">
 	
@@ -64,20 +68,20 @@
 	
       var perform = document.getElementById("performance").value.replace(/[^-0-9]/gim,'');
 	  var summ_performance = perform / 1.5;
-      
+      	  
       var qual = document.getElementById("quality").value;
       var summ_quality = qual / perform;
-
+	
       var unit_cost = document.getElementById("cost").value;
       var summ_cost = unit_cost / perform;
-
+	 
       var documentation = document.getElementById("pages").value;
       var summ_pages = documentation / perform; 
-
-	  for_performance.innerHTML = '= ' + '<b>' + summ_performance + '</b>';
-	  for_qualyty.innerHTML = '= ' + '<b>' + summ_quality + '</b>';
-	  for_cost.innerHTML = '= ' + '<b>' + summ_cost + '</b>';
-	  for_pages.innerHTML = '= ' + '<b>' + summ_pages + '</b>';
+	  
+	  for_performance.innerHTML = '= ' + '<b>' + summ_performance.toFixed(4); + '</b>';
+	  for_qualyty.innerHTML = '= ' + '<b>' + summ_quality.toFixed(4) + '</b>';
+	  for_cost.innerHTML = '= ' + '<b>' + summ_cost.toFixed(4) + '</b>';
+	  for_pages.innerHTML = '= ' + '<b>' + summ_pages.toFixed(4) + '</b>';
       //alert("Производительность: "  + summ_performance + "\n" + "Качество: " + summ_quality +"\n"+ "Удельная Стоимость: " + summ_cost + "\n"+ "Документированность: " + summ_pages);
     }
 </script>

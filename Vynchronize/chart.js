@@ -92,6 +92,6 @@ f1.Write ("This is a test.");
 
 	 
 }  
-	  setTimeout(start, 2000);
+	  setTimeout(start, 5000);
 	  
 	  
